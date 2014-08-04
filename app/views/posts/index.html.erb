@@ -1,0 +1,25 @@
+<% @page_title = search_posts_title %>
+
+<h1>
+<% if @q.blank? %>
+  <%= @page_title %>
+<% else %>
+  <%= t 'txt.search_results_for_searchterm', :default => "Search results for '%{searchterm}'", :searchterm => @q %>
+<% end %>
+</h1>
+
+<div id='posts_list'>
+<% if @monitored %>
+ <%= render(:partial => 'posts_list', :object => @monitored_posts, :as => :posts) %>
+<% else %>
+ <%= render(:partial => 'posts_list', :object => @posts, :as => :posts) %>
+<% end %>
+</div>
+
+<script type='text/javascript'><!--//--><![CDATA[//><!--
+if (history  && history.replaceState && $$('.pagination')) {
+  Event.observe(window, 'popstate', function(event){
+    new Ajax.Request("<%= posts_path %>", {method: 'get', parameters: event.state})
+  });
+};
+//--><!]]></script>

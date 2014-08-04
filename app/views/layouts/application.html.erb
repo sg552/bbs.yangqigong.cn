@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1 plus MathML 2.0 plus SVG 1.1//EN" "http://www.w3.org/2002/04/xhtml-math-svg/xhtml-math-svg-flat.dtd" >
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title><%= current_site && current_site.name || I18n.t('txt.beast_title', :default => 'Altered Beast') %><%= " - " + @page_title if @page_title %></title>
+    <%= favicon_link_tag %>
+    <%= stylesheet_link_tag 'application' %>
+    <%= javascript_include_tag 'application' %>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    MathML: { useMathMLspacing: true },
+    "HTML-CSS": { scale: 90,
+                  extensions: ["handle-floats.js"]
+       }
+  });
+</script>
+<script type="text/javascript">
+  if (!(Prototype.Browser.Gecko || navigator.userAgent.match(/MathPlayer/))) {
+    var s = document.createElement('script');
+    s.src = "<%= '/assets/MathJax/MathJax.js' %>?config=MML_HTMLorMML-full";
+    document.querySelector('head').appendChild(s);
+  };
+</script>
+    <% @feed_icons.each do |feed| %>
+    <%= auto_discovery_link_tag :atom, feed[:url], :title => "Subscribe to '#{feed[:title]}'" %>
+    <% end if @feed_icons.present? %>
+    <link rel="search" type="application/opensearchdescription+xml" href="http://<%= request.host_with_port %>/open_search.xml" />
+    <%= csrf_meta_tag %>
+  </head>
+  <body>
+    <div id="header">
+      <%= render "layouts/head" %>
+    </div>
+
+    <div id="container">
+      <div id="content">
+        <%= flash_messages %>
+        <%= yield %>
+      </div>
+
+      <div id="right">
+        <%= yield(:right) %>
+      </div>
+
+      <br style="clear:both;" />
+    </div>
+
+    <div id="footer">
+      <%= render "layouts/footer" %>
+      <br style="clear:both;" />
+    </div>
+  </body>
+</html>

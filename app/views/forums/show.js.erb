@@ -1,0 +1,9 @@
+<% if @monitored %>
+  $('topics_list').update("<%= escape_javascript(render(:partial => 'topics_list', :object => @monitored_topics, :as => :topics))%>");
+<% else %>
+  $('topics_list').update("<%= escape_javascript(render(:partial => 'topics_list', :object => @topics, :as => :topics))%>");
+<% end %>
+<%= p = Hash.new
+   p.update('page' => params[:page].to_i) if params[:page]
+   p.update('monitored' => 'true') if @monitored
+   modify_history('replaceState', @forum.name, "#{@forum.permalink}.html", p) %>

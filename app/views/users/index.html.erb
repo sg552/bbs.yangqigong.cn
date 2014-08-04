@@ -1,0 +1,42 @@
+<h5><%= I18n.t 'txt.views_users.find_a_user', :default => 'Find a User' %></h5>
+
+<%= form_tag users_path, :method => 'get' do %>
+<p>
+<label><%= I18n.t 'txt.views_users.display_name_or_login', :default => 'Display name or login' %></label>
+<%= text_field_tag :q, @q %> 
+<%= submit_tag I18n.t('txt.views_users.search_title', :default => "Search") %></p>
+<% end %>
+
+<h1 style="margin-top:0;"><%= I18n.t 'txt.users', :default => 'Users' %></h1>
+<p class="subtitle">
+  <%= user_count %>: <%= active_user_count %>, <%= lurking_user_count %>
+</p>
+
+<% if logged_in? && current_user.admin? %>
+
+<%= form_tag({:action => 'index'}, :method => 'get', :remote => true, :id => 'filter_users') do %>
+  <% ['all', 'active', 'suspended', 'pending'].each do |stat| %>
+    <%= radio_button_tag(:status, stat, !!(params['status'] == stat || (!params['status'] && stat == 'all')) ) %>
+    <%= label_tag("status_#{stat}".to_sym, I18n.t("txt.views_users.#{stat}", :default => stat) ) %>
+  <% end %>
+  <%= submit_tag("Filter", :id => 'filter_submit') %>
+<% end %>
+<script type='text/javascript'><!--//--><![CDATA[//><!--
+var form = document.getElementById('filter_users');
+$('filter_submit').remove();
+Event.on(form, 'click', function(event){form.submit();})
+//--><!]]></script>
+
+<% end %>
+
+<div id='users_list'>
+  <%= render(:partial => 'users_list') %>
+</div>
+
+<script type='text/javascript'><!--//--><![CDATA[//><!--
+if (history && history.replaceState && $$('.pagination')) {
+  Event.observe(window, 'popstate', function(event){
+    new Ajax.Request("<%= users_path %>", {method: 'get', parameters: event.state})
+  });
+};
+//--><!]]></script>

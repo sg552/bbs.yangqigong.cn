@@ -1,0 +1,54 @@
+<% content_for :right do %>
+
+<% unless @forum.description.blank? %>
+<%= @forum.description_html.html_safe %>
+<hr />
+<% end %>
+
+<h5 style="margin-bottom:1.0em;"><%= I18n.t 'txt.moderator', :count => @forum.moderators.size, :default => 'Moderator' %></h5>
+
+<% unless @forum.moderators.empty? %>
+<ul class="flat" style="margin-top:1em;">
+<% @forum.moderators.each do |user| %>
+  <li><%= link_to user.display_name || user.login, user %></li>
+<% end %>
+</ul>
+<% else %>
+<p><%= I18n.t 'txt.views_forums.unmoderated_html', :default => 'This forum is currently unmoderated.<br />Please always be courteous.'.html_safe %></p>
+<% end %>
+
+<% end %>
+
+<% @page_title = @forum.name %>
+
+<div class="crumbs">
+<%= link_to I18n.t('txt.forums', :default => 'Forums'), root_path %> <span class="arrow">&#x2192;</span>
+</div>
+<h1 style="margin-top:0.5em"><%= @forum.name %></h1>
+
+<p class="subtitle">
+  <%= feed_icon_tag @forum.name, forum_posts_path(@forum, :format => :atom) %> 
+  <%= I18n.t 'txt.count_topics', :count => @forum.topics.size, :num => number_with_delimiter(@forum.topics.size) %>,
+  <%= I18n.t 'txt.count_posts', :count => @forum.posts.size, :num => number_with_delimiter(@forum.posts.size) %>
+</p>
+
+<div id="topics_list">
+<%= if @monitored
+      render(:partial => 'topics_list', :object => @monitored_topics, :as => :topics)
+    else
+      render(:partial => 'topics_list', :object => @topics, :as => :topics)
+    end
+%>
+</div>
+
+<% if logged_in? %>
+  <p><%= link_to I18n.t('txt.new_topic', :default => 'New topic'), new_forum_topic_path(@forum), :class => "utility" %></p>
+<% end%>
+
+<script type='text/javascript'><!--//--><![CDATA[//><!--
+if (history  && history.replaceState && $$('.pagination')) {
+  Event.observe(window, 'popstate', function(event){
+    new Ajax.Request("<%= @forum.permalink %>", {method: 'get', parameters: event.state})
+  });
+};
+//--><!]]></script>

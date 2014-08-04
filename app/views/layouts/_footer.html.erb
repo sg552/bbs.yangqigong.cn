@@ -1,0 +1,10 @@
+<p class="disclaim">
+  <strong>
+  <% if site = current_site || Site.first %>
+    <%= site.tagline %>
+  <% end %>
+  </strong>
+</p>
+<p style="clear:left;float:left;">
+  <%# I18n.t 'txt.footer_message', :default => "Two's company. Three's a forum. More's a Beast." %>
+</p>
