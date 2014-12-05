@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 dir = File.dirname(__FILE__)
 
 # look for spec as plugin, in lib, or as a gem

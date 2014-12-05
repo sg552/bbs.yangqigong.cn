@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 module ModelStubbing
   # Stubs hold custom attributes that are applied to models when
   # instantiated.  By default, accessing the same stub twice

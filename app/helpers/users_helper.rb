@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 module UsersHelper
   # todo: make this use "size" instead of "count" and maybe cache it
   def user_count

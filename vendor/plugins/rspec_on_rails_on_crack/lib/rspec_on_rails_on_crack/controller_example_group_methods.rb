@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 module Spec::DSL::Main
   def describe_access_for(controller, &block)
     RspecOnRailsOnCrack::ControllerAccessProxy.new(self, controller).instance_eval(&block)

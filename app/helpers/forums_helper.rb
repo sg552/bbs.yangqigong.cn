@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 module ForumsHelper
   # used to know if a topic has changed since we read it last
   def recent_topic_activity(topic)

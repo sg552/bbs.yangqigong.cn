@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 # Psych could be a gem, so try to ask for it
 begin
   gem 'psych'

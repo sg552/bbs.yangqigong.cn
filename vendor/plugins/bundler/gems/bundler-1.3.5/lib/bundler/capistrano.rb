@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 # Capistrano task for Bundler.
 #
 # Just add "require 'bundler/capistrano'" in your Capistrano deploy.rb, and

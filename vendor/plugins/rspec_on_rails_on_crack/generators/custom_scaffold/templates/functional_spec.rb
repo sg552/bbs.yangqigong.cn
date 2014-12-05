@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 require File.dirname(__FILE__) + '<%= '/..' * class_nesting_depth %>/../spec_helper'
 
 describe <%= controller_class_name %>Controller, "GET #index" do

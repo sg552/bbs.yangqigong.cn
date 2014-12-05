@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 %w(controller_example_group_methods model_example_group_methods).each { |lib| require "rspec_on_rails_on_crack/#{lib}" }
 
 begin

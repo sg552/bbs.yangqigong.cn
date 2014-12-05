@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 puts
 puts " ****** BrainBuster ******* successfully installed!"
 puts " Please see the README for detailed instructions, or join the google group"

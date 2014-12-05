@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 module Bundler
   class Environment
     attr_reader :root

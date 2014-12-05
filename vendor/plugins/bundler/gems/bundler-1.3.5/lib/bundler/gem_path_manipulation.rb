@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 module Bundler
   def self.preserve_gem_path
     original_gem_path = ENV["_ORIGINAL_GEM_PATH"]

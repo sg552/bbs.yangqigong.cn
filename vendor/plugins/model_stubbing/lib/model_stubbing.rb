@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 require 'model_stubbing/extensions'
 require 'model_stubbing/definition'
 require 'model_stubbing/model'

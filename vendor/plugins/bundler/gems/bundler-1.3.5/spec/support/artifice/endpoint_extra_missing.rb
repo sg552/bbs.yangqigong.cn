@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 require File.expand_path("../endpoint_extra", __FILE__)
 
 Artifice.deactivate

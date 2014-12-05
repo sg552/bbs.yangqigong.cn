@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 module Spec
   module Matchers
     RSpec::Matchers.define :have_dep do |*args|

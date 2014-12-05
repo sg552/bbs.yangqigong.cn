@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 ##Choose the method for delivering signup emails
 ActionMailer::Base.delivery_method = :smtp # or :sendmail
 

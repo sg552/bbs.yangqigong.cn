@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 module Bundler
   class Injector
     def self.inject(new_deps)

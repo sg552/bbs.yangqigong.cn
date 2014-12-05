@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 class PostsSweeper < ActionController::Caching::Sweeper
   observe Post
 

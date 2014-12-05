@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 require 'digest/sha2'
 # Controller level system that actually does the work of creating and validating
 # the captcha via filters, and also providing helpers for determining if the captcha was already

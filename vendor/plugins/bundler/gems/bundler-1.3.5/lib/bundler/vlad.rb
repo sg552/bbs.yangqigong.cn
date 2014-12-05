@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 # Vlad task for Bundler.
 #
 # Just add "require 'bundler/vlad'" in your Vlad deploy.rb, and

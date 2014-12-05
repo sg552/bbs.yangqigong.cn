@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 require 'rubygems/dependency'
 require 'bundler/shared_helpers'
 require 'bundler/rubygems_ext'

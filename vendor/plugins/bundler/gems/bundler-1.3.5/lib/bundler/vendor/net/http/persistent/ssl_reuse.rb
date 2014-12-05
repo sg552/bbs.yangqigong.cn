@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 ##
 # This Net::HTTP subclass adds SSL session reuse and Server Name Indication
 # (SNI) RFC 3546.

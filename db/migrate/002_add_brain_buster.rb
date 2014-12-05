@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 class AddBrainBuster < ActiveRecord::Migration
   def self.up
     create_table "brain_busters", :force => true do |t|

@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 module ModelStubbing
   # Models hold one or more stubs.
   class Model

@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 module Bundler
   class Settings
     def initialize(root = nil)

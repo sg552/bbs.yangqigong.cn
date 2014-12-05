@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 class User
   acts_as_state_machine :initial => :passive
   state :passive

@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 AlteredBeast::Application.routes.draw do
   get '/session' => "sessions#create", :as => 'open_id_complete'
 

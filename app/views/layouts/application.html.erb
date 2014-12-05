@@ -24,7 +24,6 @@
     <% @feed_icons.each do |feed| %>
     <%= auto_discovery_link_tag :atom, feed[:url], :title => "Subscribe to '#{feed[:title]}'" %>
     <% end if @feed_icons.present? %>
-    <link rel="search" type="application/opensearchdescription+xml" href="http://<%= request.host_with_port %>/open_search.xml" />
     <%= csrf_meta_tag %>
   </head>
   <body>

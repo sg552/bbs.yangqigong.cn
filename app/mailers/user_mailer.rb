@@ -1,4 +1,4 @@
-# coding: utf-8
+# -*- encoding : utf-8 -*-
 class UserMailer < ActionMailer::Base
   default :from => "your_domain@example.com"
 

@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 module ModelStubbing
   define_models do
     time 2007, 6, 15

@@ -11,7 +11,6 @@ gem 'thin'
 gem "prototype-rails", "~> 3.2.1"
 gem 'sass-rails', "3.2.6"
 gem 'uglifier'
-
 gem 'acts_as_list'
 gem 'acts_as_state_machine', :git => 'git://github.com/ilabsolutions/acts_as_state_machine.git', :ref => '665633d0db'
 gem 'permalink_fu'
@@ -25,8 +24,6 @@ gem 'ZenTest', '4.10.0'
 group :development, :test do
   gem 'rspec-rails'
   gem 'highline'
-  gem 'sqlite3-ruby', :require => "sqlite3"
-  # gem 'ruby-debug19'
   gem 'autotest'
   gem 'rails3-generators'
 end

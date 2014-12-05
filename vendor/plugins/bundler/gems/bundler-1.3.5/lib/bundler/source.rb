@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 module Bundler
   module Source
     autoload :Rubygems, 'bundler/source/rubygems'

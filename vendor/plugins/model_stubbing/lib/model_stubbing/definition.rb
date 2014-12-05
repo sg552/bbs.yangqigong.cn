@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 module ModelStubbing
   # A Definition holds an array of models with their own stubs.  Also, a definition
   # can set the current time for your tests.  You typically create one per test case or

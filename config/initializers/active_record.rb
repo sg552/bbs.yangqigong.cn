@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 require 'acts_as_state_machine'
 class ActiveRecord::Base
   include ScottBarron::Acts::StateMachine

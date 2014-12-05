@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 module AuthenticatedSystem
   protected
     def current_site

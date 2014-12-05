@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 require "strscan"
 
 # Some versions of the Bundler 1.1 RC series introduced corrupted

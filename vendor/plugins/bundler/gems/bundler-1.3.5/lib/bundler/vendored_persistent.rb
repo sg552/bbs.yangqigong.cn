@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 begin
   require 'openssl'
   OpenSSL && OpenSSL::SSL # ensure OpenSSL is loaded

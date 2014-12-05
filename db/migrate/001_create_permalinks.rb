@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 class CreatePermalinks < ActiveRecord::Migration
   def self.up
     transaction do

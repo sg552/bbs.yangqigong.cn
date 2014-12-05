@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 class SitesController < ApplicationController
   before_filter :admin_required
   before_filter :find_site, :only => [:show, :edit, :update, :destroy]

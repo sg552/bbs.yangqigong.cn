@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 require 'instiki_stringsupport'
 require 'maruku'
 require 'maruku/ext/math'

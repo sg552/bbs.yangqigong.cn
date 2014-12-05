@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 class <%= class_name %> < ActiveRecord::Migration
   class BrainBuster < ActiveRecord::Base; end;
   

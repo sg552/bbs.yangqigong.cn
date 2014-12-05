@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 module Bundler
   class Deployment
     def self.define_task(context, task_method = :task, opts = {})

@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 module Bundler
   class RubyVersion
     attr_reader :version, :engine, :engine_version

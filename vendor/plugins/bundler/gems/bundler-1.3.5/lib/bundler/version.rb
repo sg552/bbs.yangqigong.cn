@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 module Bundler
   # We're doing this because we might write tests that deal
   # with other versions of bundler and we are unsure how to

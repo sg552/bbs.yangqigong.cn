@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 require 'bundler'
 require 'bundler/similarity_detector'
 require 'bundler/vendored_thor'

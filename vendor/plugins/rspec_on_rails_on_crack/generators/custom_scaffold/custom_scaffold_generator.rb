@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 class CustomScaffoldGenerator < Rails::Generator::NamedBase
   attr_reader   :controller_name,
                 :controller_class_path,

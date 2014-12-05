@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 # typical vanilla garlic configuration
 
 garlic do

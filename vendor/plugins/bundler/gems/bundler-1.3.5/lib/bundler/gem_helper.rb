@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 $:.unshift File.expand_path('../vendor', __FILE__)
 require 'thor'
 require 'bundler'

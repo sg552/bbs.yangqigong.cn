@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 require 'set'
 # This is the latest iteration of the gem dependency resolving algorithm. As of now,
 # it can resolve (as a success or failure) any set of gem dependencies we throw at it

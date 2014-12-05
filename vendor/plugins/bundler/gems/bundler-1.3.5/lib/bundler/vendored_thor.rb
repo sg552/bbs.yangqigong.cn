@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 if defined?(Thor)
   Bundler.ui.warn "Thor has already been required. " +
     "This may cause Bundler to malfunction in unexpected ways."

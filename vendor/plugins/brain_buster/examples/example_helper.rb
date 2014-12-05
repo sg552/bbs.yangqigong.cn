@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 $:.unshift(File.dirname(__FILE__) + '/../lib')
 $:.reject! { |e| e.include? 'TextMate' }
 ENV['RAILS_ENV'] = 'test' unless ENV['RAILS_ENV']

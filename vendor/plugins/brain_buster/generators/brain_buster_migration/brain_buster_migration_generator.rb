@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 class BrainBusterMigrationGenerator < Rails::Generator::NamedBase
     attr_reader :migration_table_name
     def initialize(runtime_args, runtime_options = {})

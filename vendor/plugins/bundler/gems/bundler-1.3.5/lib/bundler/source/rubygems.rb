@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 require 'uri'
 require 'rubygems/user_interaction'
 require 'rubygems/spec_fetcher'

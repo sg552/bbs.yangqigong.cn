@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 module Bundler
   class SimilarityDetector
     SimilarityScore = Struct.new(:string, :distance)

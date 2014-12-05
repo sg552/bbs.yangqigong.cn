@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 require 'bundler/shared_helpers'
 
 if Bundler::SharedHelpers.in_bundle?

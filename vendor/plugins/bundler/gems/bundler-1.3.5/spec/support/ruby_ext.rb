@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 class IO
   def read_available_bytes(chunk_size = 16384, select_timeout = 0.02)
     buffer = []

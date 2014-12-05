@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 require 'humane_integer'
 
  # Simple model to hold sets of questions and answers.

@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 module Spec
   module Indexes
     def dep(name, reqs = nil)

@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 require 'rubygems'
 # rubygems master requires UI for ConfigFile but doesn't require it
 require 'rubygems/user_interaction'

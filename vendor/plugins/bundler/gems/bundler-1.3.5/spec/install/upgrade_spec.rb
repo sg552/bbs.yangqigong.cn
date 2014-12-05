@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 require "spec_helper"
 
 describe "bundle install for the first time with v1.0" do

@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 class << ActiveRecord::Base
   def concerned_with(*concerns)
     concerns.each do |concern|

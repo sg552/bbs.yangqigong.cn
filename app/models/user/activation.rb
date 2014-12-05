@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 class User
   include Authentication
   include Authentication::ByPassword

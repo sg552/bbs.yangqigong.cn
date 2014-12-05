@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 module Bundler
   def self.with_friendly_errors
     yield

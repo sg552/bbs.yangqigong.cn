@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 module Bundler
   module RubyDsl
     def ruby(ruby_version, options = {})

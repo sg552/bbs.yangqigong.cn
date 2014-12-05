@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 # Attempts to work around rails fixture loading
 module ModelStubbing
   module Extension

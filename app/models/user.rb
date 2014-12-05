@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 class User < ActiveRecord::Base
   concerned_with :states, :activation, :posting, :validation
   formats_attributes :bio
